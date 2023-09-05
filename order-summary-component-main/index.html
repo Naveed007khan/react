@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Order Summary  Card</title>
+   <meta name="author" content="naveed marwat">
+   <meta name="description" content="its an task to create online music music web page">
+   <style>
+      .container {
+         width: 100vw;
+        height: 100vh;
+          
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+      }
+
+      body {
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+         padding: 0;
+         margin: 0;
+         background-image: url('images/pattern-background-desktop.svg');
+         background-repeat: no-repeat;
+         background-size: cover;
+
+      }
+
+      .plan {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         border: none;
+         border-radius: 4px;
+         background-color: rgba(158, 157, 157, 0.1);
+      
+      }
+
+      .plan:hover {
+         background-color: rgba(158, 157, 157, 0.5);
+         box-shadow: 2px 2px 5px 2px rgba(110, 108, 108, 0.5);
+      }
+
+      .plan:hover .detail {
+
+         color: black;
+      }
+
+      .form {
+         width: 25%;
+         display: flex;
+         flex-direction: column;
+         justify-content: start;
+         align-items: center;
+         background-color: aliceblue;
+         border-radius: 10px;
+      }
+
+      .header {
+
+         margin-top: 10px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         font-weight: bold;
+         text-align: center;
+      }
+
+      .description {
+         text-align: center;
+         font-size: 14px;
+         color: rgb(110, 108, 108);
+      }
+
+      .subcontainer {
+         width: 80%;
+      }
+
+      .logo {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+
+      }
+
+      .change {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+      }
+
+      .change a {
+         display: block;
+         font-size: 14px;
+      }
+
+      .btn-payment {
+         background-color: blueviolet;
+         color: white;
+         margin: 25px 0 25px 0;
+         width: 80%;
+         height: 30px;
+         border: none;
+         border-radius: 15px;
+         transition: box-shadow, 1s;
+         cursor: pointer;
+      }
+      .btn-cancelorder{
+         margin: 25px 0 25px 0;
+         color: black;
+         cursor: pointer;
+         background-color:rgba(240,248,255,0.2);
+         border: none;
+         font-weight: bold;
+         border:none;
+         border-radius:12px;
+
+
+      }
+
+      .btn-payment:hover {
+
+         box-shadow: 2px 2px 8px 2px rgba(110, 108, 108, 0.3);
+         
+
+      }
+
+      @media(min-width:0px) and (max-width:575px) 
+      {
+         .form {
+            width: 90%;
+            height: 60%;
+          
+         }
+        .plan{
+         margin-top: 40px;
+       }
+       .btn-payment{
+
+         margin-top: 40px;
+       }
+      }
+
+       @media(min-width:576px) and (max-width:767px) 
+
+      {
+         .form{
+            width:60%;
+            height: 60%;
+         }
+        .plan,.btn-payment{
+         margin-top: 40px;    
+      }   
+      }
+          
+   </stylE>
+</head>
+
+<body>
+
+   <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1260" height="437"><path fill="#D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>
+     -->
+   <div class="container">
+      <div class="form">
+         <div class="img"><img src="images/Screenshot 2023-08-28 030506.png" alt="image"
+               style="width: 100%; border-top-left-radius:10px ;border-top-right-radius:10px ;"></div>
+         <div class="subcontainer">
+            <p class="header">Order Summary</p>
+            <p class="description">you can liston to millions of songs audio books and podcasts
+               on any device any where you like!
+            </p>
+            <div class="plan">
+               <div class="logo"><img src="images/icon-music.svg"
+                     style="width: 30px; display: flex; flex-direction: column; justify-content: centersss;"
+                     alt="music-icon"></div>
+               <div class="detail">
+                  <p
+                     style=" font-size: 11px; text-align: center;  font-weight: bold; margin-bottom: 3px; vertical-align:mi;">
+                     Annual Plan</p>
+                  <p style="color: rgb(174, 174, 174); font-size: 10px; text-align: center; font-weight: bold;">$59.9
+                  </p>
+               </div>
+               <div class="change"><a style="text-decoration: none;" href="#">change</a></div>
+
+            </div>
+
+         </div>
+         <button class="btn-payment">Proceed to Payment</button>
+         <button class="btn-cancelorder">Cancel Order</button>
+         
+      </div>
+   </div>
+</body>
+
+</html>
